@@ -7,7 +7,7 @@ from django.http import HttpResponse
 def home(request):
     # each view function or "view" 
     # recieves a request object
-    return HttpResponse('<h1>Hello</h1>')
+    return render(request, 'home.html')
     # to send a response, we return it!
 
 def about(request):
