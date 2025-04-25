@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main_app.urls')) 
+    path('', include('main_app.urls')),
+    path('accounts/', include('django.contrib.auth.urls')), 
     # ^ direct all Web Traffic for the root route to the main_app's routes instead    
 ]
